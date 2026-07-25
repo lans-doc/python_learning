@@ -8,4 +8,14 @@ def maximum(*numbers):
                 max_number = n
         return max_number
 
-print(maximum(5, 55, 65, 34))
+def minimum(*numbers):
+    if not numbers:
+        return None
+
+    min_number = numbers[0]
+    for n in numbers[1:]:
+        if n < min_number:
+            min_number = n
+        return min_number
+
+print(minimum(5, 55, 65, 34))
